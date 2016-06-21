@@ -14,4 +14,11 @@ document.addEventListener('DOMContentLoaded', function(e) {
                     .attr('stroke','black')
                     .attr('stroke-width',10);
 
+  var red = canvas.append('rect')
+                    .attr('width',370)
+                    .attr('height',435)
+                    .attr('x',250)
+                    .attr('y',80)
+                    .attr('fill', 'red');
+
 });
