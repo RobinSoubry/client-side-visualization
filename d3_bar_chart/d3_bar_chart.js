@@ -4,6 +4,10 @@ document.addEventListener("DOMContentLoaded", function(e) {
   var width = 500;
   var height = 500;
 
+  var widthScale = d3.scale.linear()
+                    .domain([0, 60])
+                    .range([0,width]);
+
   var canvas = d3.select('body')
               .append('svg')
               .attr('width',width)
