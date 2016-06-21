@@ -12,5 +12,9 @@ document.addEventListener("DOMContentLoaded", function(e) {
                       .attr("r",50) // Give the circle a radius
                       .attr("fill","green") // Fill color of the object is an attribute, not a style
 
+  // Step 3: Add a rectangle to the canvas
+  var rectangle = canvas.append("rect")
+                      .attr("width",100)
+                      .attr("height",50);
 
 });
