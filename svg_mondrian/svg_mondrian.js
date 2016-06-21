@@ -5,4 +5,13 @@ document.addEventListener('DOMContentLoaded', function(e) {
                   .attr('width',700)
                   .attr('height',800);
 
+  var frame = canvas.append('rect')
+                    .attr('width',550)
+                    .attr('height',650)
+                    .attr('x',75)
+                    .attr('y',75)
+                    .attr('fill', 'none')
+                    .attr('stroke','black')
+                    .attr('stroke-width',10);
+
 });
