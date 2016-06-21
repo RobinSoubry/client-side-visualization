@@ -8,6 +8,10 @@ document.addEventListener("DOMContentLoaded", function(e) {
                     .domain([0, 60])
                     .range([0,width]);
 
+  var color = d3.scale.linear()
+                .domain([0,60])
+                .range(['red','blue'])
+
   var canvas = d3.select('body')
               .append('svg')
               .attr('width',width)
@@ -19,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
                       .append('rect')
                       .attr('width', function(d) { return widthScale(d); })
                       .attr('height', 50)
-                      .attr('fill', 'blue')
-                      .attr('y', function(d,i) { return i *100 });
+                      .attr('fill', function(d) { return color(d) })
+                      .attr('y', function(d,i) { return i * 100 });
 
 });
