@@ -35,4 +35,44 @@ document.addEventListener('DOMContentLoaded', function(e) {
                     .attr('y',620)
                     .attr('fill', 'yellow');
 
+  var vertical = canvas.append('line')
+                    .attr('x1', 245)
+                    .attr('y1', 80)
+                    .attr('x2',245)
+                    .attr('y2',730)
+                    .attr('stroke','black')
+                    .attr('stroke-width',10);
+
+  var horizontal = canvas.append('line')
+                      .attr('x1', 80)
+                      .attr('y1', 520)
+                      .attr('x2',620)
+                      .attr('y2',520)
+                      .attr('stroke','black')
+                      .attr('stroke-width',10);
+
+  var fatHorizontal = canvas.append('line')
+                      .attr('x1', 80)
+                      .attr('y1', 200)
+                      .attr('x2',250)
+                      .attr('y2',200)
+                      .attr('stroke','black')
+                      .attr('stroke-width',20);
+
+  var smallHorizontal = canvas.append('line')
+                      .attr('x1', 540)
+                      .attr('y1', 620)
+                      .attr('x2',620)
+                      .attr('y2',620)
+                      .attr('stroke','black')
+                      .attr('stroke-width',10);
+
+  var vertical = canvas.append('line')
+                    .attr('x1', 540)
+                    .attr('y1', 520)
+                    .attr('x2',540)
+                    .attr('y2',730)
+                    .attr('stroke','black')
+                    .attr('stroke-width',10);
+
 });
