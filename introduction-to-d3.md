@@ -15,6 +15,11 @@
 4. Styling & animations
 5. Connect to real data source (JSON parsing)
 
+### Resources
+* [D3 Docs](https://github.com/d3/d3/wiki)
+* [20 D3 video tutorials by D3 Vienno](https://www.youtube.com/watch?v=n5NcCoa9dDU&list=PL6il2r9i3BqH9PmbOf5wA5E1wOG3FT22p)
+* [D3 Gallery: 100+ very advanced examples, often with source-code](https://github.com/d3/d3/wiki/Gallery)
+
 ### Common pitfalls
 * D3 selectors rely on DOM elements. Make sure that all the DOM elements are loaded before the script is executed.
   * __on-page-script:__ Add script at the bottom of the page
