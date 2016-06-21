@@ -10,3 +10,7 @@
 1. Add D3 library to your html document with the `<script>` tag.
   * CDN: `<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>`
   * Download the code and include it in your files
+2. Create an SVG canvas to draw on
+3. Create shapes on canvas
+4. Styling & animations
+5. Connect to real data source (JSON parsing)
