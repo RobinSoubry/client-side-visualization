@@ -1,1 +1,3 @@
-svg_mondrian.js
+document.addEventListener('DOMContentLoaded', function(e) { 
+
+});
