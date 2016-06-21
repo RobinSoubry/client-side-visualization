@@ -21,4 +21,6 @@
   * __linked file _(preferred)_:__ Wrap your script in an event listener
     ``document.addEventListener("DOMContentLoaded", function(e) { // Your D3 code });``
 * Your drawings are rendered on the SVG canvas: If you go outside of that range, it gets cut off.
+  * Expand your SVG canvas
+  * Auto-resize your image to fit canvas
 * D3 is an extensive library with many geometric configurations, shapes and styles. Make sure to understand what you are doing: Don't recycle given examples from the D3 code base.
