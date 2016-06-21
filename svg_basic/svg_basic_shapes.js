@@ -17,4 +17,13 @@ document.addEventListener("DOMContentLoaded", function(e) {
                       .attr("width",100)
                       .attr("height",50);
 
+  // Step 4: Add a rectangle to the canvas
+  var line = canvas.append("line")
+                      .attr("x1",0)
+                      .attr("y1",100)
+                      .attr("x2",400)
+                      .attr("y2",400)
+                      .attr("stroke","red")
+                      .attr("stroke-width",5);
+
 });
