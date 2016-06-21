@@ -14,3 +14,11 @@
 3. Create shapes on canvas
 4. Styling & animations
 5. Connect to real data source (JSON parsing)
+
+### Common pitfalls
+* D3 selectors rely on DOM elements. Make sure that all the DOM elements are loaded before the script is executed.
+  * __on-page-script:__ Add script at the bottom of the page
+  * __linked file _(preferred)_:__ Wrap your script in an event listener
+    ``document.addEventListener("DOMContentLoaded", function(e) { // Your D3 code });``
+* Your drawings are rendered on the SVG canvas: If you go outside of that range, it gets cut off.
+* D3 is an extensive library with many geometric configurations, shapes and styles. Make sure to understand what you are doing: Don't recycle given examples from the D3 code base.
