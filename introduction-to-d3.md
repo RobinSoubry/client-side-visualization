@@ -17,7 +17,7 @@
 
 ### Resources
 * [D3 Docs](https://github.com/d3/d3/wiki)
-* [20 D3 video tutorials by D3 Vienno](https://www.youtube.com/watch?v=n5NcCoa9dDU&list=PL6il2r9i3BqH9PmbOf5wA5E1wOG3FT22p)
+* [20 D3 video tutorials by D3 Vienno](https://www.youtube.com/playlist?list=PL6il2r9i3BqH9PmbOf5wA5E1wOG3FT22p)
 * [D3 Gallery: 100+ very advanced examples, often with source-code](https://github.com/d3/d3/wiki/Gallery)
 
 ### Common pitfalls
