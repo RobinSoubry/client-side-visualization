@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
                       .attr("width",100)
                       .attr("height",50);
 
-  // Step 4: Add a rectangle to the canvas
+  // Step 4: Add a diagonal line to the canvas
   var line = canvas.append("line")
                       .attr("x1",0)
                       .attr("y1",100)
