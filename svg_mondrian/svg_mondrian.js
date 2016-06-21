@@ -21,4 +21,11 @@ document.addEventListener('DOMContentLoaded', function(e) {
                     .attr('y',80)
                     .attr('fill', 'red');
 
+  var blue = canvas.append('rect')
+                    .attr('width',170)
+                    .attr('height',200)
+                    .attr('x',80)
+                    .attr('y',520)
+                    .attr('fill', 'blue');
+
 });
