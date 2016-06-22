@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
   var width = 500;
   var height = 500;
 
-  var widthScale = d3.scale.linear() // scale is a methods that has a subset of opstions (linear scale, logarithmic etc…)
+  var widthScale = d3.scale.linear() // scale is a function that has a subset of opstions (linear scale, logarithmic etc…)
                     .domain([0, 60]) // Domain is the range from your smallest to greatest element in the data to show.
                     .range([0,width]); // We make full use of the canvas by setting the range to the width of the container.
 
@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function(e) {
               .attr('width',width)
               .attr('height',height)
               .append('g') // g: stands for 'group', which makes it easy to manipulate elements in a group.
-              .attr('transform','translate(20,0)') // translate the position to a position you desire (x,y)
-              .call(axis);
+              .attr('transform','translate(20,20)'); // translate the position to a position you desire (x,y)
+
 
   var bars = canvas.selectAll('rect') // selectAll selects all 'rect' elements. --> Empty selection to connect data to.
                   .data(dataArray) // Bind actual data, pulled from the dataArray to the empty selection.
@@ -34,5 +34,9 @@ document.addEventListener("DOMContentLoaded", function(e) {
                       .attr('height', 50)
                       .attr('fill', function(d) { return color(d) }) // The color is determined by the value of the data-point in a range from 'red' to 'blue'
                       .attr('y', function(d,i) { return i * 100 }); // d: data, i: index
+
+  canvas.append('g')
+        .attr('transform','translate(0,360)')
+        .call(axis);
 
 });
