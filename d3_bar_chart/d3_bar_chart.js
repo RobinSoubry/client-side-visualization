@@ -15,7 +15,9 @@ document.addEventListener("DOMContentLoaded", function(e) {
   var canvas = d3.select('body')
               .append('svg')
               .attr('width',width)
-              .attr('height',height);
+              .attr('height',height)
+              .append('g') // g: stands for 'group', which makes it easy to manipulate elements in a group.
+              .attr('transform','translate(50,50)'); // translate the position to a position you desire (x,y)
 
   var bars = canvas.selectAll('rect') // selectAll selects all 'rect' elements. --> Empty selection to connect data to.
                   .data(dataArray) // Bind actual data, pulled from the dataArray to the empty selection.
