@@ -19,6 +19,7 @@
 * [D3 Docs](https://github.com/d3/d3/wiki)
 * [20 D3 video tutorials by D3 Vienno](https://www.youtube.com/playlist?list=PL6il2r9i3BqH9PmbOf5wA5E1wOG3FT22p)
 * [D3 Gallery: 100+ very advanced examples, often with source-code](https://github.com/d3/d3/wiki/Gallery)
+* [D3 101 with code-examples and video tutorials from scratch & 100+ code examples](http://github.com/curran/screencasts)
 
 ### Common pitfalls
 * D3 selectors rely on DOM elements. Make sure that all the DOM elements are loaded before the script is executed.
