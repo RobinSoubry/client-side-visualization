@@ -12,12 +12,16 @@ document.addEventListener("DOMContentLoaded", function(e) {
                 .domain([0,60])
                 .range(['red','blue'])
 
+  var axis = d3.svg.axis()
+              .scale(widthScale);
+
   var canvas = d3.select('body')
               .append('svg')
               .attr('width',width)
               .attr('height',height)
               .append('g') // g: stands for 'group', which makes it easy to manipulate elements in a group.
-              .attr('transform','translate(50,50)'); // translate the position to a position you desire (x,y)
+              .attr('transform','translate(20,0)') // translate the position to a position you desire (x,y)
+              .call(axis);
 
   var bars = canvas.selectAll('rect') // selectAll selects all 'rect' elements. --> Empty selection to connect data to.
                   .data(dataArray) // Bind actual data, pulled from the dataArray to the empty selection.
